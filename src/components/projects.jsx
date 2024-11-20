@@ -10,6 +10,7 @@ import { Container } from './container'
 import { Link } from './link'
 import { Heading } from './text'
 import { Gradient } from '@/components/gradient'
+import { FadeIn, FadeInStagger } from './FadeIn'
 
 const projects = [
   {
@@ -95,9 +96,11 @@ export function Projects() {
   return (
     <Gradient className="relative overflow-hidden mx-2 rounded-4xl pt-14">
       <Container>
-        <Heading as="h3" className="font-semibold">
-          Latest Projects
-        </Heading>
+        <FadeIn>
+          <Heading as="h3" className="font-semibold">
+            Latest Projects
+          </Heading>
+        </FadeIn>  
       </Container>
       <div
         ref={scrollRef}
