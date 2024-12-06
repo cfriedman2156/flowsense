@@ -9,6 +9,26 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem',
       },
+      colors: {
+        darkBlueCustom: '#0c1033',
+        lightBlueCustom: '#e6f0fc',
+        brightBlueCustom: '#185ce6',
+        textInputCustom: '#dde6f2'
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        fadeInOut: {
+          '0%, 100%': { opacity: '0' },
+          '10%, 90%': { opacity: '1' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 15s linear infinite',
+        fadeInOut: 'fadeInOut 15s linear infinite',
+      },
     },
   },
   plugins: [],
