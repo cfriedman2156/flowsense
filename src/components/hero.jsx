@@ -1,8 +1,22 @@
+'use client'
+
 import { Navbar } from "./navbar";
 import Image from "next/image";
+import React from "react";
 
 
 export function Hero() {
+    const scrollToSection = (e, sectionId, offset = -40) => {
+        e.preventDefault();
+        const section = document.getElementById(sectionId);
+    
+        if (section) {
+          const topPos = section.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({ top: topPos, behavior: 'smooth' });
+        }
+      };
+    
+    
     return (
         <div className="bg-darkBlueCustom from-blue-900 to-black text-white">
             <div className="container mx-auto px-20 py-10">
@@ -22,6 +36,7 @@ export function Hero() {
                         <div className="mt-14 mb-24">
                             <a
                                 href="#contact"
+                                onClick={(e) => scrollToSection(e, 'contact-section', 20)}
                                 className="bg-blue-600 px-6 py-3 rounded text-sm font-semibold hover:bg-blue-500"
                             >
                                 Contact Us
