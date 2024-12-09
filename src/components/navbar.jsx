@@ -37,7 +37,7 @@ export function Navbar() {
           <li>
             <a
               href="#services"
-              onClick={(e) => scrollToSection(e, 'services-section', -150)} // Adjust offset as needed
+              onClick={(e) => scrollToSection(e, 'services-section', -150)} 
               className="hover:text-blue-400"
             >
               Services
@@ -46,7 +46,7 @@ export function Navbar() {
           <li>
             <a
               href="#case-studies"
-              onClick={(e) => scrollToSection(e, 'case-studies-section', 50)} // Adjust offset as needed
+              onClick={(e) => scrollToSection(e, 'case-studies-section', 50)} 
               className="hover:text-blue-400"
             >
               Case Studies
@@ -55,7 +55,7 @@ export function Navbar() {
           <li>
             <a
               href="#testimonials"
-              onClick={(e) => scrollToSection(e, 'testimonials-section', -60)} // Adjust offset as needed
+              onClick={(e) => scrollToSection(e, 'testimonials-section', -60)} 
               className="hover:text-blue-400"
             >
               Testimonials
@@ -64,7 +64,7 @@ export function Navbar() {
           <li>
             <a
               href="#contact"
-              onClick={(e) => scrollToSection(e, 'contact-section', 20)} // Adjust offset as needed
+              onClick={(e) => scrollToSection(e, 'contact-section', 20)} 
               className="hover:text-blue-400"
             >
               Contact Us
@@ -73,7 +73,7 @@ export function Navbar() {
         </ul>
         <a
           href="#get-started"
-          onClick={(e) => scrollToSection(e, 'contact-section', 20)} // Adjust offset as needed
+          onClick={(e) => scrollToSection(e, 'contact-section', 20)} 
           className="bg-blue-600 px-5 py-3 rounded-lg text-sm hover:bg-blue-500"
         >
           Get Started

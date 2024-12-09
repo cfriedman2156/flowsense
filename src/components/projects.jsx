@@ -52,7 +52,7 @@ export function Projects() {
 
 function CaseStudyCard({ image, title, description }) {
   return (
-    <div className="bg-white shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3 cursor-pointer">
+    <div className="bg-white shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3 cursor-pointer h-full">
       <img src={image} alt={title} className="w-full h-60 object-cover" />
       <div className="p-6">
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
