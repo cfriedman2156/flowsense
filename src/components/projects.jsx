@@ -1,144 +1,86 @@
-// components/Projects.jsx
+'use client';
 
-'use client'
-
-import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
-import { clsx } from 'clsx'
-import { useRef, useState } from 'react'
-import useMeasure from 'react-use-measure'
-import { Container } from './container'
-import { Link } from './link'
-import { Heading } from './text'
-import { Gradient } from '@/components/gradient'
-import { FadeIn, FadeInStagger } from './FadeIn'
-
-const projects = [
-  {
-    img: '/projects/project1.webp',
-    title: 'AI-based enterprise software for No.1 retailer',
-    description: 'A comprehensive AI-powered data ecosystem with self-service BI capabilities that helps a global retail company make informed decisions by aggregating data from multiple sources and handling 13 million requests per day.',
-  },
-  {
-    img: '/projects/project2.webp',
-    title: 'AI-powered fitness mirror with a personal coach inside',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    img: '/projects/project3.webp',
-    title: 'Generative AI sales training platform for onboarding newly hired sales reps',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    img: '/projects/project4.webp',
-    title: 'Eye-tracking technology solution for neurological research',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    img: '/projects/project5.webp',
-    title: 'OCR application development for a multinational courier company',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    img: '/projects/project6.webp',
-    title: 'GenAI app design: a mobile application that categorizes art and spots forgery',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-]
-
-function ProjectCard({ img, title, description }) {
-  return (
-    <div className="relative flex aspect-[9/16] w-72 shrink-0 snap-center flex-col justify-end overflow-hidden rounded-3xl bg-white shadow-lg sm:aspect-[3/4] sm:w-96">
-      <img src={img} alt={title} className="absolute inset-x-0 top-0 aspect-square w-full object-cover" />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black from-[calc(7/16*100%)] ring-1 ring-inset ring-gray-950/10 sm:from-25%"
-      />
-      <figure className="relative p-10">
-        <blockquote>
-          <p className="relative text-xl font-semibold text-white">
-            {title}
-          </p>
-        </blockquote>
-        <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm font-medium text-white">{description}</p>
-        </figcaption>
-      </figure>
-    </div>
-  )
-}
+import { useState } from "react";
 
 export function Projects() {
-  const scrollRef = useRef(null)
-  const [activeIndex, setActiveIndex] = useState(0)
+  const caseStudies = [
+    {
+      image: '/assets/project1.png',
+      title: 'Retail Sales Optimization with Predictive Analytics',
+      description: 'A retail chain faced declining sales and inefficient inventory management. By implementing predictive analytics, they were able to forecast demand trends, optimize inventory levels, and increase overall revenue by 25%.',
+    },
+    {
+      image: '/assets/project2.png',
+      title: 'Customer Segmentation for a SaaS Company',
+      description: 'A SaaS provider struggled to identify and target its most profitable customer segments. Through advanced clustering algorithms, the company successfully identified key customer segments, which led to a 40% increase in conversion rates and a 20% reduction in churn.',
+    },
+    {
+      image: '/assets/project3.png',
+      title: 'Supply Chain Optimization for Manufacturing',
+      description: 'A manufacturing company faced high logistics costs and supply chain inefficiencies. By leveraging AI-powered tools, they streamlined their operations, reducing logistics costs by 30% and delivery times by 15%.',
+    },
+  ];
 
-  const scrollTo = (index) => {
-    const gap = 32
-    const cardWidth = scrollRef.current.children[0].offsetWidth
-    scrollRef.current.scrollTo({
-      left: (cardWidth + gap) * index,
-      behavior: 'smooth',
-    })
-    setActiveIndex(index)
-  }
-
-  const handleNext = () => {
-    if (activeIndex < projects.length - 1) {
-      scrollTo(activeIndex + 1)
-    }
-  }
-
-  const handlePrevious = () => {
-    if (activeIndex > 0) {
-      scrollTo(activeIndex - 1)
-    }
-  }
+  const [selectedStudy, setSelectedStudy] = useState(null);
 
   return (
-    <Gradient className="relative overflow-hidden mx-2 rounded-4xl pt-14">
-      <Container>
-        <FadeIn>
-          <Heading as="h3" className="font-semibold">
-            Latest Projects
-          </Heading>
-        </FadeIn>  
-      </Container>
-      <div
-        ref={scrollRef}
-        className={clsx([
-          'mt-16 flex gap-8 px-8 pb-12 overflow-x-auto snap-x snap-mandatory scroll-smooth',
-          '[scrollbar-width:none] [&::-webkit-scrollbar]:hidden',
-        ])}
-      >
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            img={project.img}
-            title={project.title}
-            description={project.description}
-          />
-        ))}
-      </div>
-      {/* Left Arrow Button */}
-      <button
-        onClick={handlePrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full hover:bg-gray-700 transition"
-      >
-        <span className="sr-only">Previous project</span>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M10 2a1 1 0 01.707 1.707L4.414 10l6.293 6.293A1 1 0 0110 18a1 1 0 01-.707-.293l-7-7a1 1 0 010-1.414l7-7A1 1 0 0110 2z" clipRule="evenodd" />
-        </svg>
-      </button>
+    <div className="bg-blue-50 py-20" id="case-studies-section">
+      <div className="container mx-auto text-center px-8">
+        {/* Heading */}
+        <h2 className="text-4xl text-center md:text-5xl text-4xl mb-4">
+          Case<span className="text-blue-400 font-semibold"> Studies</span>
+        </h2>
+        <p className="text-gray-600 mb-16">View some of our past successes</p>
 
-      {/* Right Arrow Button */}
-      <button
-        onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-900 text-white p-3 rounded-full hover:bg-gray-700 transition"
-      >
-        <span className="sr-only">Next project</span>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-          <path fillRule="evenodd" d="M10 18a1 1 0 01-.707-1.707L15.586 10l-6.293-6.293A1 1 0 0110.707 2.293l7 7a1 1 0 010 1.414l-7 7A1 1 0 0110 18z" clipRule="evenodd" />
-        </svg>
-      </button>
-    </Gradient>
-  )
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {caseStudies.map((study, index) => (
+            <div key={index} onClick={() => setSelectedStudy(study)}>
+              <CaseStudyCard {...study} />
+            </div>
+          ))}
+        </div>
+
+        {/* Modal */}
+        {selectedStudy && (
+          <Modal study={selectedStudy} onClose={() => setSelectedStudy(null)} />
+        )}
+      </div>
+    </div>
+  );
 }
+
+function CaseStudyCard({ image, title, description }) {
+  return (
+    <div className="bg-white shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-3 cursor-pointer">
+      <img src={image} alt={title} className="w-full h-60 object-cover" />
+      <div className="p-6">
+        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+        <p className="text-gray-700 mb-4">{description}</p>
+      </div>
+    </div>
+  );
+}
+
+function Modal({ study, onClose }) {
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="bg-white w-11/12 md:w-3/4 lg:w-1/2 max-h-[90vh] overflow-y-auto rounded-lg shadow-lg">
+        {/* Modal Header */}
+        <div className="flex justify-between items-center p-4 border-b">
+          <h2 className="text-xl font-bold">{study.title}</h2>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+            &#10005;
+          </button>
+        </div>
+        
+        {/* Modal Content */}
+        <div className="p-4">
+          <img src={study.image} alt={study.title} className="w-full h-60 object-cover mb-4 rounded" />
+          <p className="text-gray-700">{study.description}</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
