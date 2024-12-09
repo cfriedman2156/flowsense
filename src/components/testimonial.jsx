@@ -5,7 +5,7 @@ import { useState } from 'react';
 export function Testimonial() {
   const testimonials = [
     {
-      image: '/assets/profile.jpg', // Replace with the actual image path
+      image: '/assets/profile.jpg', 
       name: 'Jeff Block',
       position: 'VP of Process and Technology',
       company: 'PotentiaMetrics, Inc.',
@@ -13,7 +13,7 @@ export function Testimonial() {
         "ITRex’s team are experts in their trade. The software development they provided was critical to advancing the project to the next level.",
     },
     {
-      image: '/assets/profile2.jpg', // Replace with the actual image path
+      image: '/assets/profile2.jpg', 
       name: 'Amanda Bynes',
       position: 'Ex Disney Star',
       company: 'Washed Actors, Inc.',
@@ -21,14 +21,13 @@ export function Testimonial() {
         "I became a drug addict but was saved by Elan's company",
     },
     {
-      image: '/assets/profile3.jpg', // Replace with the actual image path
+      image: '/assets/profile3.jpg', 
       name: 'Sabrina Carpenter',
       position: 'VP of Pop Music',
       company: 'SPotify',
       feedback:
         "I was really sad when Barry Koegan cheated on me with a dumb blonde influencer. Using Elan's website made me happy again and I've even fallen for him. I hope he asks me out!",
     },
-    // Add more testimonials here if needed
   ];
 
   const [current, setCurrent] = useState(0);
@@ -42,9 +41,8 @@ export function Testimonial() {
   };
 
   return (
-    <div className="bg-brightBlueCustom text-white py-20 h-96">
+    <div className="bg-brightBlueCustom text-white py-20 h-96" id='testimonials-section'>
       <div className="container mx-auto px-8">
-        {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold mb-12">What clients say about us</h2>
 
         {/* Testimonial Card */}

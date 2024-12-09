@@ -1,16 +1,15 @@
-import { Button } from '@/components/button'
-import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { Gradient } from '@/components/gradient'
 import { LogoCloud } from '@/components/logo-cloud'
-import { Navbar } from '@/components/navbar'
 import { Projects } from '@/components/projects'
 import { Testimonial } from '@/components/testimonial'
 import { Contact } from '@/components/contact'
 import { Services } from '@/components/services'
-import { FadeIn } from '@/components/FadeIn'
 import { Hero } from '@/components/hero'
 import { Industries } from '@/components/industries'
+// import { FadeIn } from '@/components/FadeIn'
+// import { Button } from '@/components/button'
+// import { Container } from '@/components/container'
+
 
 // Edit this text with elan's copy
 export const metadata = {
@@ -38,39 +37,24 @@ export default function Home() {
         <div className="relative bg-lightBlueCustom">
           {/* Background Image #1 */}
           <div
-            className="absolute"
+            className="absolute lines-background left-10"
             style={{
-              top: '200px', // Adjust vertical position
-              left: '155px', // Adjust horizontal position
-              width: '1000px', // Adjust width
-              height: '1000px', // Adjust height
-              backgroundImage: 'url(/assets/lines.png)', // Path to image 1
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'contain',
-              zIndex: '', // Send behind content
+              top: '200px',
+              backgroundImage: 'url(/assets/lines.png)',
             }}
           ></div>
 
           {/* Background Image #2 */}
           <div
-            className="absolute"
+            className="absolute lines-background right-10"
             style={{
-              top: '200px', // Adjust vertical position
-              left: '1090px', // Adjust horizontal position
-              width: '1000px', // Adjust width
-              height: '1000px', // Adjust height
-              backgroundImage: 'url(/assets/lines.png)', // Path to image 2
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'contain',
-              zIndex: '', // Send behind content
+              top: '200px',
+              backgroundImage: 'url(/assets/lines.png)',
             }}
           ></div>
-
-          {/* Content */}
           <Industries />
-          <Contact />
+          <Contact className="z-10" />
         </div>
-
         <Footer />
       </main>
     </div>

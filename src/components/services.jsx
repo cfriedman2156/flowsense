@@ -1,7 +1,5 @@
 'use client'
 
-import { Heading, Subheading } from '@/components/text'
-import { FadeIn } from './FadeIn';
 import { useState } from 'react';
 
 
@@ -54,7 +52,7 @@ export function Services() {
                 <h2 className="text-4xl md:text-5xl text-4xl mb-16">
                     <span className="text-blue-400 font-semibold">Services </span>We Offer
                 </h2>
-                <div className="grid gap-10">
+                <div className="grid gap-2">
                     {services.map((service, index) => (
                         <ServiceCard key={index} {...service} />
                     ))}
@@ -71,24 +69,25 @@ function ServiceCard({ icon, title, description }) {
         <div
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
+            id='services-section'
             className={`transition-transform duration-300 ${hover ? 'translate-x-3' : ''}`}
         >
-            <div className="flex items-start pb-6 cursor-pointer transition">
+            <div className={`flex items-start p-6 rounded-xl transition ${hover ? 'bg-gray-100' : ''}`}>
                 {/* Icon */}
                 <div className="flex-shrink-0 w-16 h-12">
                     <img src={icon} alt={title} className="object-contain" />
                 </div>
 
                 {/* Content */}
-                <div className="ml-24 w-4/12">
+                <div className="pl-24 w-4/12">
                     <h3 className="text-2xl font-medium text-black">{title}</h3>
                 </div>
                 <div className="w-full text-gray-700">
-                    <p className={`ml-10  transition ease-in duration-150 ${hover ? 'text-gray-400' : ''}`}>{description}</p>
+                    <p className=' transition ease-in duration-150'>{description}</p>
                 </div>
 
                 {/* Hover Arrow */}
-                <div
+                {/* <div
                     className={`flex-shrink-0 pl-3  transition-opacity duration-700 ${
                         hover ? ' opacity-100' : ' opacity-0'
                     }`}
@@ -98,7 +97,7 @@ function ServiceCard({ icon, title, description }) {
                         alt="Arrow"
                         className="w-10 h-10 object-contain"
                     />
-                </div>
+                </div> */}
             </div>
         </div>
     );

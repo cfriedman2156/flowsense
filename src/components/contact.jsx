@@ -1,6 +1,6 @@
 export function Contact() {
     return (
-      <div className="py-20">
+      <div className="py-20" id="contact-section">
         <div className="container mx-auto px-8">
           {/* Heading */}
           <div className="text-center mb-12">
@@ -13,7 +13,7 @@ export function Contact() {
           </div>
   
           {/* Form */}
-          <div className="max-w-lg mx-auto">
+          <div className="max-w-lg mx-auto ">
             <form>
               {/* Name */}
               <div className="mb-6">
