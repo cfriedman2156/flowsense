@@ -7,19 +7,80 @@ export function Projects() {
     {
       image: '/assets/project1.png',
       title: 'Retail Sales Optimization with Predictive Analytics',
-      description: 'A retail chain faced declining sales and inefficient inventory management. By implementing predictive analytics, they were able to forecast demand trends, optimize inventory levels, and increase overall revenue by 25%.',
+      description: 'A retail chain faced declining sales and inefficient inventory management...',
+      details: {
+        problem: 'Declining sales and inefficient inventory management...',
+        solution: 'Implemented predictive analytics to forecast demand trends...',
+        impact: [
+          'Increased revenue by 25%',
+          'Optimized inventory levels',
+        ],
+        technologies: ['Python', 'Tableau', 'SQL'],
+      },
     },
     {
       image: '/assets/project2.png',
-      title: 'Customer Segmentation for a SaaS Company',
-      description: 'A SaaS provider struggled to identify and target its most profitable customer segments. Through advanced clustering algorithms, the company successfully identified key customer segments, which led to a 40% increase in conversion rates and a 20% reduction in churn.',
+      title: 'Financial Lender Case Study',
+      description: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
+      details: {
+        problem: `A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. 
+                  The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.`,
+        solution: [
+          'Conducted a comprehensive audit of structured and unstructured data sources, including databases, APIs, and real-time analytics, to define a clear data strategy.',
+          'Designed pipelines for real-time ingestion and used tools like dbt to transform raw data into meaningful, structured layers.',
+          'Developed tailored data marts for sales, HR, and finance, aligning data insights with specific team needs.',
+          'Created intuitive dashboards and reports using Snowflake, SQL, Looker, and Tableau to provide actionable insights and simplify data analysis.',
+          'Integrated Python-based visualizations within Snowflake to uncover hidden trends.',
+          'Leveraged ActiveBatch to automate workflows, enabling real-time updates and reducing manual effort.',
+        ],
+        impact: [
+          'Cost Savings: By migrating to Snowflake and automating workflows, the client reduced data storage and processing costs by 35%, saving approximately $2.1 million annually.',
+          'Efficiency Gains: Data processing times were slashed by 50%, with ETL processes that previously took 12 hours now completing in under 6 hours.',
+          'Enhanced Decision-Making: Improved data accessibility and accuracy resulted in a 20% faster decision-making cycle, helping the client seize market opportunities more quickly.',
+          'Revenue Growth: With better insights and real-time data, the client increased their marketing campaign ROI by 15%, contributing to an estimated $5 million increase in annual revenue.',
+          'Operational Productivity: Automation and custom data marts streamlined workflows, saving teams an estimated 2,500 person-hours per year, equivalent to a $400,000 reduction in labor costs.',
+          'User Adoption: The intuitive dashboards and visualizations led to a 40% increase in internal user adoption of the data platform, with over 75% of business units actively leveraging insights.',
+        ],
+        technologies: [
+          'Data Storage: Snowflake served as the core data warehouse platform, providing scalability and performance.',
+          'Data Integration & Transformation: SQL Server, dbt, SSIS were used to establish robust ETL processes.',
+          'Data Marts & Reports: SSAS and custom SQL procedures powered department-specific data marts. Reporting and visualization tools like Looker, Tableau, and Python enhanced analytics capabilities.',
+          'Orchestration: ActiveBatch ensured streamlined workflows and automated processes for data integration and reporting.',
+        ],
+      },
     },
     {
       image: '/assets/project3.png',
       title: 'Supply Chain Optimization for Manufacturing',
-      description: 'A manufacturing company faced high logistics costs and supply chain inefficiencies. By leveraging AI-powered tools, they streamlined their operations, reducing logistics costs by 30% and delivery times by 15%.',
+      description: 'A manufacturing company faced high logistics costs and supply chain inefficiencies...',
+      details: {
+        problem: 'High logistics costs and supply chain inefficiencies...',
+        solution: 'Leveraged AI-powered tools to streamline operations...',
+        impact: [
+          '30% reduction in logistics costs',
+          '15% reduction in delivery times',
+        ],
+        technologies: ['AI', 'Power BI', 'SQL'],
+      },
     },
+    // {
+    //   image: '/assets/project6.png',
+    //   title: 'Project Placeholder 3',
+    //   description: 'Yet another placeholder for carousel functionality testing.',
+    // },
+    // {
+    //   image: '/assets/project6.png',
+    //   title: 'Project Placeholder 3',
+    //   description: 'Yet another placeholder for carousel functionality testing.',
+    // },
+    // {
+    //   image: '/assets/project6.png',
+    //   title: 'Project Placeholder 3',
+    //   description: 'Yet another placeholder for carousel functionality testing.',
+    // },
   ];
+  
+  
 
   const [selectedStudy, setSelectedStudy] = useState(null);
 
@@ -63,24 +124,82 @@ function CaseStudyCard({ image, title, description }) {
 }
 
 function Modal({ study, onClose }) {
+  const handleBackdropClick = (e) => {
+    if (e.target.id === "modal-backdrop") {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white w-11/12 md:w-3/4 lg:w-1/2 max-h-[90vh] overflow-y-auto rounded-lg shadow-lg">
+    <div
+      id="modal-backdrop"
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center  items-center z-50"
+      onClick={handleBackdropClick}
+    >
+      <div
+        className="bg-white w-11/12 md:w-3/4 lg:w-1/2 max-h-[90vh] overflow-y-auto rounded shadow-lg p-6"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Modal Header */}
         <div className="flex justify-between items-center p-4 border-b">
-          <h2 className="text-xl font-bold">{study.title}</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
+          <h2 className="text-5xl text-blue-400 font-semibold w-full text-center">{study.title}</h2>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-700 absolute right-4">
             &#10005;
           </button>
         </div>
-        
+
         {/* Modal Content */}
-        <div className="p-4">
-          <img src={study.image} alt={study.title} className="w-full h-60 object-cover mb-4 rounded" />
-          <p className="text-gray-700">{study.description}</p>
+        <div className="p-6 px-12 ">
+          {/* <img src={study.image} alt={study.title} className="w-full h-60 object-cover mb-4 rounded" /> */}
+
+          {/* Problem Section */}
+          {study.details.problem && (
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold mb-2">The <span className="text-blue-400 font-semibold"> Problem</span></h3>
+              <p className="text-gray-700 whitespace-pre-line mx-12">{study.details.problem}</p>
+            </div>
+          )}
+
+          {/* Solution Section */}
+          {study.details.solution && (
+            <div className="mb-6 text-left">
+              <h3 className="text-xl font-bold mb-2">The <span className="text-blue-400 font-semibold"> Solution</span></h3>
+              <ul className="list-disc pl-6 text-gray-700">
+                {study.details.solution.map((item, index) => (
+                  <li className='pb-1'key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Impact Section */}
+          {study.details.impact && (
+            <div className="mb-6 text-left">
+              <h3 className="text-xl font-bold mb-2">The <span className="text-blue-400 font-semibold"> Impact</span></h3>
+              <ul className="list-disc pl-6 text-gray-700">
+                {study.details.impact.map((item, index) => (
+                  <li className='pb-1' key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Technologies Section */}
+          {study.details.technologies && (
+            <div className="text-left">
+              <h3 className="text-xl font-bold mb-2"><span className="text-blue-400 font-semibold">Technologies </span> Used</h3>
+              <ul className="list-disc pl-6 text-gray-700">
+                {study.details.technologies.map((tech, index) => (
+                  <li className='pb-1' key={index}>{tech}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
   );
 }
+
+
 

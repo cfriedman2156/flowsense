@@ -1,13 +1,22 @@
+'use client';
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 export function LogoCloud() {
   const logos = [
-    '/clients/bright-path/logo-dark.svg',
-    '/clients/family-fund/logo-dark.svg',
-    '/clients/green-life/logo-dark.svg',
-    '/clients/home-work/logo-dark.svg',
-    '/clients/mail-smirk/logo-dark.svg',
-    '/clients/north-adventures/logo-dark.svg',
-    '/clients/phobia/logo-dark.svg',
-    '/clients/unseal/logo-dark.svg',
+    '/clients/airflow.png',
+    '/clients/azure.png',
+    '/clients/databricks.png',
+    '/clients/dbt.png',
+    '/clients/fivetran.png',
+    '/clients/Looker.png',
+    '/clients/prefect.png',
+    '/clients/query.png',
+    '/clients/redshift.png',
+    '/clients/snowflake.png',
+    '/clients/tableau.png',
   ];
 
   return (
@@ -22,28 +31,33 @@ export function LogoCloud() {
         </p>
 
         {/* Scrolling Logos */}
-        <div className="overflow-hidden relative">
-          <div className="flex animate-scroll space-x-12">
-            {logos.map((logo, index) => (
-              <div key={index} className="flex-shrink-0 w-48 ">
-                <img
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  className="w-full h-full object-contain"
-                />
-              </div>
+        <div className="flex relative overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-10 before:bg-gradient-to-r before:from-white before:to-transparent before:content-[''] after:absolute after:right-0 after:top-0 after:h-full after:w-10 after:bg-gradient-to-l after:from-white after:to-transparent after:content-['']">
+          <motion.div
+            transition={{
+              duration: 20,
+              ease: 'linear',
+              repeat: Infinity,
+            }}
+            initial={{ translateX: 0 }}
+            animate={{ translateX: '-50%' }}
+            className="flex flex-none gap-16 pr-16"
+          >
+            {/* Duplicate the logos */}
+            {[...new Array(2)].map((_, index) => (
+              <React.Fragment key={index}>
+                {logos.map((src, i) => (
+                  <Image
+                    key={`${src}-${i}`}
+                    src={src}
+                    alt={`Logo ${i + 1}`}
+                    width={150} 
+                    height={40}
+                    className="h-8 w-auto flex-none"
+                  />
+                ))}
+              </React.Fragment>
             ))}
-            {/* Duplicate logos */}
-            {logos.map((logo, index) => (
-              <div key={`duplicate-${index}`} className="flex-shrink-0 w-48 h-24">
-                <img
-                  src={logo}
-                  alt={`Logo ${index + 1}`}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
