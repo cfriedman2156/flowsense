@@ -24,10 +24,13 @@ module.exports = {
           '0%, 100%': { opacity: '0' },
           '10%, 90%': { opacity: '1' },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
-        scroll: 'scroll 15s linear infinite',
-        fadeInOut: 'fadeInOut 15s linear infinite',
+        marquee: 'marquee 20s linear infinite',
       },
     },
   },
