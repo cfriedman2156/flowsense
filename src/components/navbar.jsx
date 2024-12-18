@@ -46,7 +46,7 @@ export function Navbar() {
           <li>
             <a
               href="#case-studies"
-              onClick={(e) => scrollToSection(e, 'case-studies-section', 50)} 
+              onClick={(e) => scrollToSection(e, 'case-studies-section', 20)} 
               className="hover:text-blue-400"
             >
               Case Studies
@@ -55,7 +55,7 @@ export function Navbar() {
           <li>
             <a
               href="#testimonials"
-              onClick={(e) => scrollToSection(e, 'testimonials-section', -60)} 
+              onClick={(e) => scrollToSection(e, 'testimonials-section', -50)} 
               className="hover:text-blue-400"
             >
               Testimonials
