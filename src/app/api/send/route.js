@@ -5,13 +5,12 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req) {
   try {
-    // Parse user input from the form
     const { name, email, phone, companyName, message } = await req.json();
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: 'info@flowsensesolutions.com', // Use a verified sender
-      to: ['chaseafriedman@gmail.com'],    // Your recipient email
+      from: 'info@flowsensesolutions.com', 
+      to: ['Elan@flowsensesolutions.com'],  
       subject: `New Inquiry from ${companyName || 'Unknown Company'}`,
       react: (
         <EmailTemplate
