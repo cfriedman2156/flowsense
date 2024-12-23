@@ -2,7 +2,7 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    default: 'Flow Sense Solutions',
+    default: 'FlowSense Solutions',
   },
 }
 

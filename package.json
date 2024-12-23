@@ -24,7 +24,8 @@
     "react-dom": "^18",
     "react-use-measure": "^2.1.1",
     "resend": "^4.0.1",
-    "sanity": "^3.55.0"
+    "sanity": "^3.55.0",
+    "tailwind-scrollbar": "^3.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

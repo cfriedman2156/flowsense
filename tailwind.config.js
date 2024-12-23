@@ -32,7 +32,11 @@ module.exports = {
       animation: {
         marquee: 'marquee 20s linear infinite',
       },
+      height: {
+        '100': '26rem', 
+        'iphoneProjects': '28rem',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }

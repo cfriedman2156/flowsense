@@ -20,13 +20,13 @@ export function LogoCloud() {
   ];
 
   return (
-    <div className="bg-white py-20">
-      <div className="container mx-auto text-center">
+    <div className="bg-white py-16 sm:py-20">
+      <div className="container mx-auto px-4 sm:px-8 text-center">
         {/* Heading */}
-        <h2 className="text-5xl font-medium mb-4">
+        <h2 className="text-3xl sm:text-5xl font-medium mb-4">
           <span className="text-blue-400 font-semibold">Technology </span>Partners
         </h2>
-        <p className="text-gray-600 mb-12">
+        <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-12">
           We leverage industry-leading tools and platforms to deliver exceptional results.
         </p>
 
@@ -40,7 +40,7 @@ export function LogoCloud() {
             }}
             initial={{ translateX: 0 }}
             animate={{ translateX: '-50%' }}
-            className="flex flex-none gap-16 pr-16"
+            className="flex flex-none gap-8 sm:gap-16 pr-8 sm:pr-16"
           >
             {/* Duplicate the logos */}
             {[...new Array(2)].map((_, index) => (
@@ -50,9 +50,9 @@ export function LogoCloud() {
                     key={`${src}-${i}`}
                     src={src}
                     alt={`Logo ${i + 1}`}
-                    width={150} 
-                    height={40}
-                    className="h-8 w-auto flex-none"
+                    width={100} // Adjusted for smaller screens
+                    height={30}
+                    className="h-6 sm:h-8 w-auto flex-none"
                   />
                 ))}
               </React.Fragment>
