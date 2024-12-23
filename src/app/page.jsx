@@ -32,26 +32,8 @@ export default function Home() {
         <div className="bg-gradient-to-b from-white from-50% to-gray-100">
           <Testimonial />
         </div>
-
         {/* Background Images Section */}
-        <div className="relative bg-lightBlueCustom">
-          {/* Background Image #1 */}
-          <div
-            className="absolute lines-background left-10"
-            style={{
-              top: '200px',
-              backgroundImage: 'url(/assets/lines.png)',
-            }}
-          ></div>
-
-          {/* Background Image #2 */}
-          <div
-            className="absolute lines-background right-10"
-            style={{
-              top: '200px',
-              backgroundImage: 'url(/assets/lines.png)',
-            }}
-          ></div>
+        <div className="relative bg-lightBlueCustom">         
           <Industries />
           <Contact className="z-10" />
         </div>
