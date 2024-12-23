@@ -26,7 +26,7 @@ export function Industries() {
     <div className="py-16 sm:py-20">
       <div className="container mx-auto px-4 sm:px-8 text-center">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-5xl font-medium mb-6 sm:mb-4">
+        <h2 className="text-3xl sm:text-5xl font-medium mb-6 sm:mb-4 mx-8 md:mx-1">
           <span className="text-blue-400 font-semibold">Industries </span> We Specialize In
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mb-10 sm:mb-12">

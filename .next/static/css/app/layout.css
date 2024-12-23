@@ -605,6 +605,10 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -1538,6 +1542,11 @@ video {
 
 @media (min-width: 640px) {
 
+  .sm\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1655,6 +1664,11 @@ video {
     padding-right: 3rem;
   }
 
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .sm\:pr-16 {
     padding-right: 4rem;
   }
@@ -1711,6 +1725,16 @@ video {
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .md\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
   }
 
   .md\:mt-0 {
