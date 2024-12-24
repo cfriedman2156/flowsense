@@ -7,87 +7,89 @@ export function Projects() {
     {
       image: '/assets/project1.png',
       title: 'Retail Sales Optimization with Predictive Analytics',
-      description: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
+      description: 'A top global creative marketplace struggled to manage a 20-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
       details: {
-        problem: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
+        problem: 'A top global creative marketplace struggled to manage a 20-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
         solution: 'We built a modern, scalable data infrastructure to address challenges in data organization, accessibility, and usability.',
         solutionPoints: ['Understanding the Landscape: Conducted a comprehensive audit of structured and unstructured data sources, including databases, APIs, and real-time analytics, to define a clear data strategy.',
           'Streamlining Data Pipelines: Designed pipelines for real-time ingestion and used tools like dbt to transform raw data into meaningful, structured layers.',
           'Customized Departmental Solutions: Developed tailored data marts for sales, HR, and finance, aligning data insights with specific team needs.',
-          'Delivering Insights: Created intuitive dashboards and reports using Snowflake, SQL, Looker, and Tableau to provide actionable insights and simplify data analysis.',
-          'Advanced Analytics: Integrated Python-based visualizations within Snowflake to uncover hidden trends.',
-          'Automation for Agility: Leveraged ActiveBatch to automate workflows, enabling real-time updates and reducing manual effort.'],
-        impact: ['Cost Savings: By migrating to Snowflake and automating workflows, the client reduced data storage and processing costs by 35%, saving approximately $2.1 million annually.',
-          'Efficiency Gains: Data processing times were slashed by 50%, with ETL processes that previously took 12 hours now completing in under 6 hours.',
+          'Delivering Insights: Created intuitive dashboards and reports using Looker to provide actionable insights and simplify data analysis.',
+          'Automation for Agility: Leveraged Prefect to automate workflows, enabling real-time updates and reducing manual effort.'],
+        impact: ['Cost Savings: By migrating to Snowflake and automating workflows, the client reduced data storage and processing costs by 35%, saving approximately $1.05 million annually.',
+          'Efficiency Gains: Data processing times were slashed by over 50%, with ETL processes that previously took 12 hours now completing in under 6 hours.',
           'Enhanced Decision-Making: Improved data accessibility and accuracy resulted in a 20% faster decision-making cycle, helping the client seize market opportunities more quickly.',
           'Revenue Growth: With better insights and real-time data, the client increased their marketing campaign ROI by 15%, contributing to an estimated $5 million increase in annual revenue.',
-          'Operational Productivity: Automation and custom data marts streamlined workflows, saving teams an estimated 2,500 person-hours per year, equivalent to a $400,000 reduction in labor costs.',
-          'User Adoption: The intuitive dashboards and visualizations led to a 40% increase in internal user adoption of the data platform, with over 75% of business units actively leveraging insights.'
         ],
         technologies: ['Data Storage: Snowflake served as the core data warehouse platform, providing scalability and performance.', 
-          'Data Integration & Transformation: SQL Server, dbt, SSIS were used to establish robust ETL processes.', 
-          'Data Marts & Reports: SSAS and custom SQL procedures powered department-specific data marts. Reporting and visualization tools like Looker, Tableau, and Python enhanced analytics capabilities.',
-          'Orchestration: ActiveBatch ensured streamlined workflows and automated processes for data integration and reporting.'
+          'Data Integration & Transformation: Python, Prefect, dbt, and Snoflake established robust ETL processes.', 
+          'Data Marts & Reports: SSAS and custom SQL procedures powered department-specific data marts. Looker was used as the reporting and visualization tool.',
+          'Orchestration: Prefect Cloud ensured streamlined workflows and automated processes for data integration and reporting.'
         ],
         conclusion: "This design provided a scalable, modern, and efficient data management system that met the client's current and future needs."
       },
     },
-    {
-      image: '/assets/project1.png',
-      title: 'Retail Sales Optimization with Predictive Analytics',
-      description: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
-      details: {
-        problem: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
-        solution: 'We built a modern, scalable data infrastructure to address challenges in data organization, accessibility, and usability.',
-        solutionPoints: ['Understanding the Landscape: Conducted a comprehensive audit of structured and unstructured data sources, including databases, APIs, and real-time analytics, to define a clear data strategy.',
-          'Streamlining Data Pipelines: Designed pipelines for real-time ingestion and used tools like dbt to transform raw data into meaningful, structured layers.',
-          'Customized Departmental Solutions: Developed tailored data marts for sales, HR, and finance, aligning data insights with specific team needs.',
-          'Delivering Insights: Created intuitive dashboards and reports using Snowflake, SQL, Looker, and Tableau to provide actionable insights and simplify data analysis.',
-          'Advanced Analytics: Integrated Python-based visualizations within Snowflake to uncover hidden trends.',
-          'Automation for Agility: Leveraged ActiveBatch to automate workflows, enabling real-time updates and reducing manual effort.'],
-        impact: ['Cost Savings: By migrating to Snowflake and automating workflows, the client reduced data storage and processing costs by 35%, saving approximately $2.1 million annually.',
-          'Efficiency Gains: Data processing times were slashed by 50%, with ETL processes that previously took 12 hours now completing in under 6 hours.',
-          'Enhanced Decision-Making: Improved data accessibility and accuracy resulted in a 20% faster decision-making cycle, helping the client seize market opportunities more quickly.',
-          'Revenue Growth: With better insights and real-time data, the client increased their marketing campaign ROI by 15%, contributing to an estimated $5 million increase in annual revenue.',
-          'Operational Productivity: Automation and custom data marts streamlined workflows, saving teams an estimated 2,500 person-hours per year, equivalent to a $400,000 reduction in labor costs.',
-          'User Adoption: The intuitive dashboards and visualizations led to a 40% increase in internal user adoption of the data platform, with over 75% of business units actively leveraging insights.'
-        ],
-        technologies: ['Data Storage: Snowflake served as the core data warehouse platform, providing scalability and performance.', 
-          'Data Integration & Transformation: SQL Server, dbt, SSIS were used to establish robust ETL processes.', 
-          'Data Marts & Reports: SSAS and custom SQL procedures powered department-specific data marts. Reporting and visualization tools like Looker, Tableau, and Python enhanced analytics capabilities.',
-          'Orchestration: ActiveBatch ensured streamlined workflows and automated processes for data integration and reporting.'
-        ],
-        conclusion: "This design provided a scalable, modern, and efficient data management system that met the client's current and future needs."
-      },
+{
+  image: '/assets/project3.png',
+  title: 'Automating Financial Lending Processes with Real-Time Analytics',
+  description: 'A financial lending company faced challenges with manual processes, inefficient data handling, and the inability to track payments or customer behavior effectively. This hindered their ability to scale operations and manage their growing loan portfolio.',
+  details: {
+    problem: 'The company’s processes were highly manual, from client applications to payment tracking. They lacked tools to automate workflows, generate insights, and provide real-time updates on customer behavior or portfolio performance.',
+    solution: 'We designed and implemented a modern, automated system to streamline loan processing, enhance data management, and deliver actionable insights.',
+    solutionPoints: [
+      'Pipeline Automation: Used Python and Prefect Cloud to automate processes in their CRM (Pipedrive), including credit checks, loan creation, and automated customer reminders.',
+      'Data Warehouse & Transformation: Implemented Snowflake as their data warehouse and used dbt for transformations. Python was used to orchestrate workflows and ensure efficient data processing.',
+      'Real-Time Analytics: Built BI dashboards in Metabase, providing real-time insights into customer payment behavior, loan performance, and financial metrics for both customers and internal teams.',
+      'Data Storage: Leveraged AWS S3 for unstructured data storage, ensuring scalability and reliability.',
+      'Visualization & Reporting: Delivered dashboards that allowed the collections team to manage payments effectively and provided financial reporting to the executive team.'
+    ],
+    impact: [
+      'Efficiency Gains: Reduced loan processing times by 80%, enabling the company to process five times as many loans daily.',
+      'Portfolio Growth: Expanded their loan portfolio by 3.5x over two years, managing over $1 million in loans.',
+      'Enhanced Insights: Real-time analytics empowered better customer behavior tracking and decision-making.',
+      'Scalability: Automated workflows allowed the company to handle increased loan volumes without additional staffing costs.'
+    ],
+    technologies: [
+      'Orchestration: Prefect Cloud for process automation and pipeline management.',
+      'Data Warehouse: Snowflake for scalable and reliable data storage.',
+      'Transformation: dbt and Python for building and orchestrating data transformations.',
+      'Visualization: Metabase for business intelligence and reporting.',
+      'Storage: AWS S3 for unstructured data management.'
+    ],
+    conclusion: 'This solution transformed the company’s operations, allowing them to scale efficiently, improve customer engagement, and achieve significant growth in their loan portfolio.'
+  },
+},
+  {
+    image: '/assets/project2.png',
+    title: 'Real-Time Analytics for Manufacturing Efficiency',
+    description: 'A UK-based manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
+    details: {
+      problem: 'A UK-based manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
+      solution: 'We developed a scalable, real-time data engineering platform to address inefficiencies and enable intelligent, automated insights.',
+      solutionPoints: [
+        'Understanding the Landscape: Conducted a thorough assessment of existing systems, including sensor data sources and legacy fault detection processes, to define a clear data strategy.',
+        'Streamlining Data Pipelines: Designed real-time ingestion pipelines using cloud-native tools, automating data capture from industrial equipment sensors.',
+        'Enhanced Fault Detection: Replaced traditional rule-based methods with machine learning algorithms to improve accuracy in identifying potential equipment failures.',
+        'Real-Time Insights and Alerts: Built dashboards and alerting mechanisms to notify teams about critical equipment conditions, ensuring timely maintenance actions.',
+        'Automation for Agility: Automated data workflows to reduce manual intervention and improve system responsiveness.'
+      ],
+      impact: [
+        'Increased Efficiency: Reduced manual fault detection times by 60%, enabling quicker response to potential issues.',
+        'Proactive Maintenance: Improved predictive accuracy for equipment failures by 40%, minimizing unexpected downtimes.',
+        'Cost Savings: Optimized maintenance schedules reduced repair costs by 25%, saving approximately $500,000 annually.',
+        'Operational Productivity: Real-time insights streamlined workflows, saving teams an estimated 1,500 person-hours per year.',
+        'Customer Value: Introduced "Intelligence-as-a-Service" offerings, providing enhanced data insights for end customers, resulting in a 15% increase in client satisfaction scores.'
+      ],
+      technologies: [
+        'Data Storage: AWS services (S3 and Redshift) for scalable and secure data storage.',
+        'Data Integration & Transformation: Real-time pipelines using AWS Glue and custom ETL scripts.',
+        'Machine Learning: Deployed models built in Python to enhance fault detection and predictive analytics.',
+        'Reporting & Visualization: Dashboards created with Tableau to provide actionable insights to stakeholders.',
+        'Orchestration: Automation workflows managed using Apache Airflow for efficient data pipeline management.'
+      ],
+      conclusion: 'This design enabled the manufacturing company to transition from reactive to proactive operations, significantly improving productivity and reducing costs.'
     },
-    {
-      image: '/assets/project1.png',
-      title: 'Retail Sales Optimization with Predictive Analytics',
-      description: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
-      details: {
-        problem: 'A top global creative marketplace struggled to manage a 60-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
-        solution: 'We built a modern, scalable data infrastructure to address challenges in data organization, accessibility, and usability.',
-        solutionPoints: ['Understanding the Landscape: Conducted a comprehensive audit of structured and unstructured data sources, including databases, APIs, and real-time analytics, to define a clear data strategy.',
-          'Streamlining Data Pipelines: Designed pipelines for real-time ingestion and used tools like dbt to transform raw data into meaningful, structured layers.',
-          'Customized Departmental Solutions: Developed tailored data marts for sales, HR, and finance, aligning data insights with specific team needs.',
-          'Delivering Insights: Created intuitive dashboards and reports using Snowflake, SQL, Looker, and Tableau to provide actionable insights and simplify data analysis.',
-          'Advanced Analytics: Integrated Python-based visualizations within Snowflake to uncover hidden trends.',
-          'Automation for Agility: Leveraged ActiveBatch to automate workflows, enabling real-time updates and reducing manual effort.'],
-        impact: ['Cost Savings: By migrating to Snowflake and automating workflows, the client reduced data storage and processing costs by 35%, saving approximately $2.1 million annually.',
-          'Efficiency Gains: Data processing times were slashed by 50%, with ETL processes that previously took 12 hours now completing in under 6 hours.',
-          'Enhanced Decision-Making: Improved data accessibility and accuracy resulted in a 20% faster decision-making cycle, helping the client seize market opportunities more quickly.',
-          'Revenue Growth: With better insights and real-time data, the client increased their marketing campaign ROI by 15%, contributing to an estimated $5 million increase in annual revenue.',
-          'Operational Productivity: Automation and custom data marts streamlined workflows, saving teams an estimated 2,500 person-hours per year, equivalent to a $400,000 reduction in labor costs.',
-          'User Adoption: The intuitive dashboards and visualizations led to a 40% increase in internal user adoption of the data platform, with over 75% of business units actively leveraging insights.'
-        ],
-        technologies: ['Data Storage: Snowflake served as the core data warehouse platform, providing scalability and performance.', 
-          'Data Integration & Transformation: SQL Server, dbt, SSIS were used to establish robust ETL processes.', 
-          'Data Marts & Reports: SSAS and custom SQL procedures powered department-specific data marts. Reporting and visualization tools like Looker, Tableau, and Python enhanced analytics capabilities.',
-          'Orchestration: ActiveBatch ensured streamlined workflows and automated processes for data integration and reporting.'
-        ],
-        conclusion: "This design provided a scalable, modern, and efficient data management system that met the client's current and future needs."
-      },
-    },
+  },
     {
       image: '/assets/project1.png',
       title: 'Retail Sales Optimization with Predictive Analytics',
