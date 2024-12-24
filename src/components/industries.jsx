@@ -3,22 +3,22 @@ export function Industries() {
     {
       image: '/assets/finance.png',
       title: 'Finance',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      description: 'Navigate regulatory complexities and unlock real-time insights to drive financial innovation.',
     },
     {
       image: '/assets/ecommerce.png',
       title: 'Ecommerce',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      description: 'Transform data into personalized experiences and smarter operations for sustainable growth.',
     },
     {
       image: '/assets/manufacturing.png',
       title: 'Manufacturing',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      description: 'Harness data to predict maintenance, optimize workflows, and enhance production efficiency.',
     },
     {
       image: '/assets/education.png',
       title: 'Education',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+      description: 'Empower institutions with data-driven insights to improve learning outcomes and operations.',
     },
   ];
 
