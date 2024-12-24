@@ -5,7 +5,7 @@ import { useState } from "react";
 export function Projects() {
   const caseStudies = [
     {
-      image: '/assets/project1.png',
+      image: '/assets/retail_sales.png',
       title: 'Retail Sales Optimization with Predictive Analytics',
       description: 'A top global creative marketplace struggled to manage a 20-petabyte digital library as rapid growth led to data disorganization and inefficiency. The transition to technologies like Snowflake further highlighted the lack of a unified source of truth, hindering decision-making and operations.',
       details: {
@@ -30,7 +30,7 @@ export function Projects() {
       },
     },
 {
-  image: '/assets/project3.png',
+  image: '/assets/financial_lending.png',
   title: 'Automating Financial Lending Processes with Real-Time Analytics',
   description: 'A financial lending company faced challenges with manual processes, inefficient data handling, and the inability to track payments or customer behavior effectively. This hindered their ability to scale operations and manage their growing loan portfolio.',
   details: {
@@ -60,7 +60,7 @@ export function Projects() {
   },
 },
   {
-    image: '/assets/project2.png',
+    image: '/assets/manufacturing.png',
     title: 'Real-Time Analytics for Manufacturing Efficiency',
     description: 'A UK-based manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
     details: {
