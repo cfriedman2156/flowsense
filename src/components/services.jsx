@@ -45,10 +45,10 @@ export function Services() {
     return (
         <div className="bg-white px-4 sm:px-8 lg:px-40">
             <div className="container mx-auto">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl mb-10 sm:mb-16 text-center">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl mb-4 text-center">
                     <span className="text-blue-400 font-semibold">Services </span>We Offer
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 mb-10 sm:mb-12">
+                <p className="text-sm text-center sm:text-base text-gray-600 mb-10 sm:mb-12">
                     See how our expertise in data engineering and analytics can empower your business with efficiency, intelligence, and growth
                 </p>
                 <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
