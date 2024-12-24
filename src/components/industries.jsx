@@ -30,7 +30,7 @@ export function Industries() {
           <span className="text-blue-400 font-semibold">Industries </span> We Specialize In
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mb-10 sm:mb-12">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Discover the industries we’ve worked with and helped unlock the full potential of their data
         </p>
         
         {/* Cards */}
