@@ -27,7 +27,7 @@ export function LogoCloud() {
           <span className="text-blue-400 font-semibold">Technology </span>Partners
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mb-8 sm:mb-12">
-          We leverage industry-leading tools and platforms to deliver exceptional results.
+           See the industry-leading tools in our tech stack that make building efficient and secure data systems easier than ever.
         </p>
 
         {/* Scrolling Logos */}
