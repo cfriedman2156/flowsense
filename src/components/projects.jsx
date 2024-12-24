@@ -117,7 +117,7 @@ export function Projects() {
           <h2 className="text-4xl text-center md:text-5xl mb-2">
             Case <span className="text-blue-400 font-semibold">Studies</span>
           </h2>
-          <p className="text-gray-600">View some of our past successes</p>
+          <p className="text-gray-600">See real-world examples of customers that were able to find value by partnering with FlowSense Solutions</p>
         </div>
         
         {/* Horizontal Slider */}
