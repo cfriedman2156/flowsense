@@ -60,7 +60,7 @@ export function Projects() {
   },
 },
   {
-    image: '/assets/manufacturing.png',
+    image: '/assets/manufacturing_plant.png',
     title: 'Real-Time Analytics for Manufacturing Efficiency',
     description: 'A UK-based manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
     details: {
