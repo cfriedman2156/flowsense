@@ -46,7 +46,7 @@ export function Contact() {
             Get in <span className="text-blue-400 font-semibold">Touch</span> With Us
           </h2>
           <p className="text-gray-600">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Reach out to us and let us know what's on your mind, we're always happy to chat!
           </p>
         </div>
 
