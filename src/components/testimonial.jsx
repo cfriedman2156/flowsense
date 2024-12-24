@@ -11,22 +11,22 @@ export function Testimonial() {
       position: 'VP of Process and Technology',
       company: 'PotentiaMetrics, Inc.',
       feedback:
-        "ITRex’s team are experts in their trade. The software development they provided was critical to advancing the project to the next level.",
+        "Partnering with FlowSense Solutions was the best decision we made. Our analytics have never been more reliable.",
     },
     {
       image: '/assets/profile2.jpg',
-      name: 'Amanda Bynes',
-      position: 'Ex Disney Star',
-      company: 'Washed Actors, Inc.',
-      feedback: "I became a drug addict but was saved by Elan's company.",
+      name: 'Anna Goodman',
+      position: 'COO',
+      company: 'Insource Services',
+      feedback: "Flow Sense Solutions transformed how we approach data, making us more agile and data-driven.",
     },
     {
       image: '/assets/profile3.jpg',
-      name: 'Sabrina Carpenter',
-      position: 'VP of Pop Music',
-      company: 'Spotify',
+      name: 'Mukesh Saul',
+      position: 'CEO',
+      company: 'Dorry Hillals',
       feedback:
-        "I was really sad when Barry Koegan cheated on me with a dumb blonde influencer. Using Elan's website made me happy again and I've even fallen for him. I hope he asks me out!",
+        "Their tailored solutions gave us the tools to predict trends and stay ahead of the competition!",
     },
   ];
 
