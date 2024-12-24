@@ -18,7 +18,7 @@ export function Testimonial() {
       name: 'Anna Goodman',
       position: 'COO',
       company: 'Insource Services',
-      feedback: "Flow Sense Solutions transformed how we approach data, making us more agile and data-driven.",
+      feedback: "FlowSense Solutions transformed how we approach data, making us more agile and data-driven.",
     },
     {
       image: '/assets/profile3.jpg',
