@@ -27,8 +27,8 @@ export function Hero() {
             </h1>
             <p className="mt-8 text-sm sm:text-base">
               At FlowSense Solutions, we specialize in crafting data strategies that align with your business goals.
-              By integrating advanced analytics and automation, we empower your business to make informed decisions,
-              optimize processes, and drive sustainable growth.
+              Our solutions are designed to empower businesses with clear insights, smarter automation, and scalable systems 
+              to thrive in today’s data-driven world.
             </p>
             <div className="mt-8 sm:mt-14 mb-12 lg:mb-24">
               <a
