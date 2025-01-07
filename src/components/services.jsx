@@ -26,7 +26,7 @@ export function Services() {
             icon: '/assets/ai.png',
             title: 'AI Implementation',
             description:
-                'Develop and integrate AI and machine learning models to automate data analysis, predict future trends, and optimize decision-making processes, boosting overall business efficiency.',
+                'Develop and integrate AI and machine learning models to automate data analysis, predict future trends, and streamline decision-making processes for impactful results.',
         },
         {
             icon: '/assets/automation.png',
@@ -38,7 +38,7 @@ export function Services() {
             icon: '/assets/solutions.png',
             title: 'Custom Data Solutions',
             description:
-                'Create tailored data models, unique analytics dashboards, and bespoke integrations to ensure your data systems align perfectly with your specific business needs.',
+                'Create customized data models, unique analytics dashboards, and specialized integrations to ensure your data systems align perfectly with your specific business needs.',
         },
     ];
 
@@ -49,7 +49,7 @@ export function Services() {
                     <span className="text-blue-400 font-semibold">Services </span>We Offer
                 </h2>
                 <p className="text-sm text-center sm:text-base text-gray-600 mb-10 sm:mb-12">
-                    See how our expertise in data engineering and analytics can empower your business with efficiency, intelligence, and growth
+                    Discover how our expertise in data engineering and analytics can empower your business with efficiency, intelligence, and growth
                 </p>
                 <div className="grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                     {services.map((service, index) => (
@@ -102,7 +102,7 @@ function ServiceCard({ icon, title, description }) {
 //             icon: '/assets/setup.png',
 //             title: 'Data Infrastructure Setup',
 //             description:
-//                 'Set up and configure databases, data leaks and data warehouses to ensure your data is stored efficiently and securely, ready for processing and analysis',
+//                 'Set up and configure databases, data lakes and data warehouses to ensure your data is stored efficiently and securely, ready for processing and analysis',
 //         },
 //         {
 //             icon: '/assets/development.png',

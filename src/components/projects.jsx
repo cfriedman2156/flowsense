@@ -18,8 +18,7 @@ export function Projects() {
           'Automation for Agility: Leveraged Prefect to automate workflows, enabling real-time updates and reducing manual effort.'],
         impact: ['Cost Savings: By migrating to Snowflake and automating workflows, the client reduced data storage and processing costs by 35%, saving approximately $1.05 million annually.',
           'Efficiency Gains: Data processing times were slashed by over 50%, with ETL processes that previously took 12 hours now completing in under 6 hours.',
-          'Enhanced Decision-Making: Improved data accessibility and accuracy resulted in a 20% faster decision-making cycle, helping the client seize market opportunities more quickly.',
-          'Revenue Growth: With better insights and real-time data, the client increased their marketing campaign ROI by 15%, contributing to an estimated $5 million increase in annual revenue.',
+          'Revenue Growth: With better insights and real-time data, the client increased their marketing campaign ROI by 18%, contributing to an estimated $1.2 million increase in annual revenue.',
         ],
         technologies: ['Data Storage: Snowflake served as the core data warehouse platform, providing scalability and performance.', 
           'Data Integration & Transformation: Python, Prefect, dbt, and Snoflake established robust ETL processes.', 
@@ -34,7 +33,7 @@ export function Projects() {
   title: 'Automating Financial Lending Processes with Real-Time Analytics',
   description: 'A financial lending company faced challenges with manual processes, inefficient data handling, and the inability to track payments or customer behavior effectively. This hindered their ability to scale operations and manage their growing loan portfolio.',
   details: {
-    problem: 'The company’s processes were highly manual, from client applications to payment tracking. They lacked tools to automate workflows, generate insights, and provide real-time updates on customer behavior or portfolio performance.',
+    problem: 'A financial lendings processes were highly manual, from client applications to payment tracking. They lacked tools to automate workflows, generate insights, and provide real-time updates on customer behavior or portfolio performance.',
     solution: 'We designed and implemented a modern, automated system to streamline loan processing, enhance data management, and deliver actionable insights.',
     solutionPoints: [
       'Pipeline Automation: Used Python and Prefect Cloud to automate processes in their CRM (Pipedrive), including credit checks, loan creation, and automated customer reminders.',
@@ -62,9 +61,9 @@ export function Projects() {
   {
     image: '/assets/manufacturing_plant.png',
     title: 'Real-Time Analytics for Manufacturing Efficiency',
-    description: 'A UK-based manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
+    description: 'A manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
     details: {
-      problem: 'A UK-based manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
+      problem: 'A manufacturing company specializing in industrial equipment and renewable energy solutions struggled with outdated data processes. Data collection from smart sensors was manual and slow, leading to inefficiencies in fault detection and reactive maintenance practices.',
       solution: 'We developed a scalable, real-time data engineering platform to address inefficiencies and enable intelligent, automated insights.',
       solutionPoints: [
         'Understanding the Landscape: Conducted a thorough assessment of existing systems, including sensor data sources and legacy fault detection processes, to define a clear data strategy.',
@@ -75,10 +74,8 @@ export function Projects() {
       ],
       impact: [
         'Increased Efficiency: Reduced manual fault detection times by 60%, enabling quicker response to potential issues.',
-        'Proactive Maintenance: Improved predictive accuracy for equipment failures by 40%, minimizing unexpected downtimes.',
-        'Cost Savings: Optimized maintenance schedules reduced repair costs by 25%, saving approximately $500,000 annually.',
+        'Cost Savings: Optimized maintenance schedules reduced repair costs by 22%, saving approximately $450,000 annually.',
         'Operational Productivity: Real-time insights streamlined workflows, saving teams an estimated 1,500 person-hours per year.',
-        'Customer Value: Introduced "Intelligence-as-a-Service" offerings, providing enhanced data insights for end customers, resulting in a 15% increase in client satisfaction scores.'
       ],
       technologies: [
         'Data Storage: AWS services (S3 and Redshift) for scalable and secure data storage.',

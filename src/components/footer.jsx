@@ -49,7 +49,7 @@ export function Footer() {
           ))}
         </div> */}
         <p className="mt-8 text-center text-sm/6 text-white md:order-1 md:mt-0">
-          &copy; 2024 <span className="font-semibold">Flow Sense Solutions</span>. All rights reserved.
+          &copy; 2024 <span className="font-semibold">FlowSense Solutions</span>. All rights reserved.
         </p>
       </div>
     </footer>
