@@ -6,27 +6,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 export function Testimonial() {
   const testimonials = [
     {
-      image: '/assets/profile.jpg',
-      name: 'Jeff Block',
-      position: 'VP of Process and Technology',
-      company: 'PotentiaMetrics, Inc.',
-      feedback:
-        "Partnering with FlowSense Solutions was the best decision we made. Our analytics have never been more reliable.",
-    },
-    {
-      image: '/assets/profile2.jpg',
-      name: 'Anna Goodman',
+      image: '/assets/aaron-liberman.jpg',
+      name: 'Aaron Liberman',
       position: 'COO',
-      company: 'Insource Services',
-      feedback: "FlowSense Solutions transformed how we approach data, making us more agile and data-driven.",
+      company: 'Grupo Estrella',
+      feedback:
+        "FlowSense Solutions not only built us a fully automated CRM for application intake, but also provided additional operations improvements along the way, going above and beyond what we initially had in mind.",
     },
     {
-      image: '/assets/profile3.jpg',
-      name: 'Mukesh Saul',
+      image: '/assets/patrick.jpg',
+      name: 'Patrick McDonnell',
       position: 'CEO',
-      company: 'Dorry Hillals',
+      company: 'Flapjack',
       feedback:
-        "Their tailored solutions gave us the tools to predict trends and stay ahead of the competition!",
+        "FlowSense Solutions gave us the data foundation we didn't know we were missing. Our reporting went from a manual headache to a fully automated pipeline, and we finally have the visibility to make confident, data-driven decisions as we scale.",
     },
   ];
 
